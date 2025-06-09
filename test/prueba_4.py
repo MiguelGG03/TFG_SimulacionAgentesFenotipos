@@ -1,0 +1,86 @@
+import random
+from core.reticula_nx import *
+from core.juego import simular_juego
+from utils.metricas import f_estrategia
+
+# -------------------------------
+# PARÁMETROS DEL MODELO
+# -------------------------------
+L = 10
+pasos = 50
+
+distrib_fenotipos = {
+    'E': 0.30,
+    'P': 0.21,
+    'O': 0.20,
+    'A': 0.17,
+    'R': 0.12
+}
+
+tau_limites = (3, 10)
+delta_tau = 1
+K1 = 0.1
+K2 = 0.1
+
+# -------------------------------
+# INICIALIZACIÓN DE LA RETÍCULA
+# -------------------------------
+reticula = ReticulaNX(L, distrib_fenotipos, tau_limites)
+
+# -------------------------------
+# SIMULACIÓN
+# -------------------------------
+for t in range(pasos):
+    print(f"--- Paso {t+1} ---")
+
+    # Reiniciar pagos
+    for nodo in reticula.nodos():
+        reticula.G.nodes[nodo]['jugador'].reiniciar_pago()
+
+    # Valores aleatorios de T y S
+    T = random.uniform(0, 2)
+    S = random.uniform(-1, 1)
+
+    # Decidir estrategias
+    for nodo in reticula.nodos():
+        jugador = reticula.G.nodes[nodo]['jugador']
+        jugador.decidir_estrategia(T, S)
+
+    # Simular juegos entre pares (evitando repeticiones)
+    jugadas = set()
+    for nodo in reticula.nodos():
+        jugador = reticula.G.nodes[nodo]['jugador']
+        for vecino_nodo in reticula.vecinos(nodo):
+            par = tuple(sorted([nodo, vecino_nodo]))
+            if par not in jugadas:
+                vecino = reticula.G.nodes[vecino_nodo]['jugador']
+                simular_juego(jugador, vecino, T, S)
+                jugadas.add(par)
+
+    # Calcular entorno global φ(t)
+    total_coop = sum(f_estrategia(reticula.G.nodes[n]['jugador'].estrategia) for n in reticula.nodos())
+    phi_global = total_coop / (L * L)
+
+    # Actualizar τ según entorno local
+    for nodo in reticula.nodos():
+        jugador = reticula.G.nodes[nodo]['jugador']
+        vecinos = [reticula.G.nodes[v]['jugador'] for v in reticula.vecinos(nodo)]
+        suma_local = sum(f_estrategia(v.estrategia) for v in vecinos)
+        phi_local = suma_local / len(vecinos)
+        jugador.ajustar_tau(phi_local, phi_global, delta_tau, K1)
+
+    # Considerar cambio de fenotipo si θ ≥ τ
+    for nodo in reticula.nodos():
+        jugador = reticula.G.nodes[nodo]['jugador']
+        jugador.vecinos = [reticula.G.nodes[v]['jugador'] for v in reticula.vecinos(nodo)]
+        jugador.considerar_cambio_de_fenotipo(K2)
+
+    # Guardar frame visual por fenotipo
+    graficar_y_guardar_fenotipos(reticula, paso=t, carpeta='img/frames')
+
+# -------------------------------
+# CREAR GIF FINAL
+# -------------------------------
+reticula
+
+crear_gif(carpeta='img/frames', nombre_salida='simulacion.gif', fps=5)

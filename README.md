@@ -1,2 +1,4 @@
-# TFG_SimulacionAgentesFenotipos
+# Trabajo de Fin de Grado - Ingeniería Matemática - Simulación de Agentes Fenotipos
+
+
 Se trata de un repositorio cuya finalidad es simular una población dividida en vecindarios donde conviven agentes con diferentes tipos de fenotipos conductuales y cuyas interacciones están basadas en juegos estáticos de la Teoría de Juegos
