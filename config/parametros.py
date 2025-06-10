@@ -1,5 +1,5 @@
 L = 10
-pasos = 100
+pasos = 250
 
 distrib_fenotipos = {
     'E': 0.30,
@@ -20,5 +20,5 @@ distrib_fenotipos = {
 
 tau_limites = (3, 10)
 delta_tau = 1
-K1 = 0.1
-K2 = 0.6
+K1 = 0.001
+K2 = 0.1
