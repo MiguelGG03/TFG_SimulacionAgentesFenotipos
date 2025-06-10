@@ -4,6 +4,9 @@ El enlace al repositorio de este artículo es el siguiente: [GitHub](https://git
 
 Se trata de un repositorio cuya finalidad es simular una población dividida en vecindarios donde conviven agentes con diferentes tipos de fenotipos conductuales y cuyas interacciones están basadas en juegos estáticos de la Teoría de Juegos
 
+
+
+
 ## Simulación
 
 Hemos hecho diversos tipos de simulaciones para poder sacar conclusiones [...]
@@ -221,26 +224,158 @@ Se distribuyen todos los fenotipos al 20%
 
 ###### K1_005
 
-![K1_005](PAGOS_CONOCIDOS/OtrosParametros/K1/005/simulacion.gif)
+- **SIM1**
+
+![K1_005_SIM1_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM1/cooperacion_global.png)  
+![K1_005_SIM1_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM1/fenotipos_evolucion.png)  
+![K1_005_SIM1_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM1/frame_000.png)  
+![K1_005_SIM1_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM1/frame_099.png)  
+![K1_005_SIM1_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM1/simulacion.gif)
+
+- **SIM2**
+
+![K1_005_SIM2_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM2/cooperacion_global.png)  
+![K1_005_SIM2_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM2/fenotipos_evolucion.png)  
+![K1_005_SIM2_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM2/frame_000.png)  
+![K1_005_SIM2_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM2/frame_099.png)  
+![K1_005_SIM2_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM2/simulacion.gif)
+
+- **SIM3**
+
+![K1_005_SIM3_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM3/cooperacion_global.png)  
+![K1_005_SIM3_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM3/fenotipos_evolucion.png)  
+![K1_005_SIM3_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM3/frame_000.png)  
+![K1_005_SIM3_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM3/frame_099.png)  
+![K1_005_SIM3_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/005/SIM3/simulacion.gif)
 
 ###### K1_030
 
-![K1_030](PAGOS_CONOCIDOS/OtrosParametros/K1/030/simulacion.gif)
+- **SIM1**
+
+![K1_030_SIM1_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM1/cooperacion_global.png)  
+![K1_030_SIM1_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM1/fenotipos_evolucion.png)
+![K1_030_SIM1_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM1/frame_000.png)  
+![K1_030_SIM1_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM1/frame_099.png)  
+![K1_030_SIM1_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM1/simulacion.gif)
+
+- **SIM2**
+
+![K1_030_SIM2_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM2/cooperacion_global.png)  
+![K1_030_SIM2_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM2/fenotipos_evolucion.png)  
+![K1_030_SIM2_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM2/frame_000.png)  
+![K1_030_SIM2_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM2/frame_099.png)  
+![K1_030_SIM2_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM2/simulacion.gif)
+
+- **SIM3**
+
+![K1_030_SIM3_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM3/cooperacion_global.png)  
+![K1_030_SIM3_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM3/fenotipos_evolucion.png)  
+![K1_030_SIM3_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM3/frame_000.png)  
+![K1_030_SIM3_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM3/frame_099.png)  
+![K1_030_SIM3_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/030/SIM3/simulacion.gif)
 
 ###### K1_060
 
-![K1_060](PAGOS_CONOCIDOS/OtrosParametros/K1/060/simulacion.gif)
+- **SIM1**
+
+![K1_060_SIM1_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM1/cooperacion_global.png)  
+![K1_060_SIM1_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM1/fenotipos_evolucion.png)  
+![K1_060_SIM1_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM1/frame_000.png)  
+![K1_060_SIM1_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM1/frame_099.png)  
+![K1_060_SIM1_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM1/simulacion.gif)
+
+- **SIM2**
+
+![K1_060_SIM2_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM2/cooperacion_global.png)  
+![K1_060_SIM2_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM2/fenotipos_evolucion.png)  
+![K1_060_SIM2_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM2/frame_000.png)  
+![K1_060_SIM2_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM2/frame_099.png)  
+![K1_060_SIM2_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM2/simulacion.gif)
+
+- **SIM3**
+
+![K1_060_SIM3_glob](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM3/cooperacion_global.png)  
+![K1_060_SIM3_evo](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM3/fenotipos_evolucion.png)  
+![K1_060_SIM3_ini](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM3/frame_000.png)  
+![K1_060_SIM3_fin](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM3/frame_099.png)  
+![K1_060_SIM3_gif](PAGOS_CONOCIDOS/OtrosParametros/K1/060/SIM3/simulacion.gif)
 
 ##### K2
 
 ###### K2_005
 
-![K2_005](PAGOS_CONOCIDOS/OtrosParametros/K2/005/simulacion.gif)
+- **SIM1**
+
+![K2_005_SIM1_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM1/cooperacion_global.png)  
+![K2_005_SIM1_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM1/fenotipos_evolucion.png)  
+![K2_005_SIM1_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM1/frame_000.png)  
+![K2_005_SIM1_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM1/frame_099.png)  
+![K2_005_SIM1_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM1/simulacion.gif)
+
+- **SIM2**
+
+![K2_005_SIM2_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM2/cooperacion_global.png)  
+![K2_005_SIM2_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM2/fenotipos_evolucion.png)  
+![K2_005_SIM2_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM2/frame_000.png)  
+![K2_005_SIM2_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM2/frame_099.png)  
+![K2_005_SIM2_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM2/simulacion.gif)
+
+- **SIM3**
+
+![K2_005_SIM3_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM3/cooperacion_global.png)  
+![K2_005_SIM3_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM3/fenotipos_evolucion.png)  
+![K2_005_SIM3_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM3/frame_000.png)  
+![K2_005_SIM3_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM3/frame_099.png)  
+![K2_005_SIM3_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/005/SIM3/simulacion.gif)
 
 ###### K2_030
 
-![K2_030](PAGOS_CONOCIDOS/OtrosParametros/K2/030/simulacion.gif)
+- **SIM1**
+
+![K2_030_SIM1_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM1/cooperacion_global.png)  
+![K2_030_SIM1_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM1/fenotipos_evolucion.png)  
+![K2_030_SIM1_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM1/frame_000.png)  
+![K2_030_SIM1_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM1/frame_099.png)  
+![K2_030_SIM1_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM1/simulacion.gif)
+
+- **SIM2**
+
+![K2_030_SIM2_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM2/cooperacion_global.png)  
+![K2_030_SIM2_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM2/fenotipos_evolucion.png)  
+![K2_030_SIM2_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM2/frame_000.png)  
+![K2_030_SIM2_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM2/frame_099.png)  
+![K2_030_SIM2_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM2/simulacion.gif)
+
+- **SIM3**
+
+![K2_030_SIM3_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM3/cooperacion_global.png)  
+![K2_030_SIM3_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM3/fenotipos_evolucion.png)  
+![K2_030_SIM3_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM3/frame_000.png)  
+![K2_030_SIM3_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM3/frame_099.png)  
+![K2_030_SIM3_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/030/SIM3/simulacion.gif)
 
 ###### K2_060
 
-![K2_060](PAGOS_CONOCIDOS/OtrosParametros/K2/060/simulacion.gif)
+- **SIM1**
+
+![K2_060_SIM1_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM1/cooperacion_global.png)  
+![K2_060_SIM1_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM1/fenotipos_evolucion.png)  
+![K2_060_SIM1_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM1/frame_000.png)  
+![K2_060_SIM1_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM1/frame_099.png)  
+![K2_060_SIM1_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM1/simulacion.gif)
+
+- **SIM2**
+
+![K2_060_SIM2_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM2/cooperacion_global.png)  
+![K2_060_SIM2_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM2/fenotipos_evolucion.png)  
+![K2_060_SIM2_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM2/frame_000.png)  
+![K2_060_SIM2_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM2/frame_099.png)  
+![K2_060_SIM2_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM2/simulacion.gif)
+
+- **SIM3**
+
+![K2_060_SIM3_glob](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM3/cooperacion_global.png)  
+![K2_060_SIM3_evo](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM3/fenotipos_evolucion.png)  
+![K2_060_SIM3_ini](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM3/frame_000.png)  
+![K2_060_SIM3_fin](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM3/frame_099.png)  
+![K2_060_SIM3_gif](PAGOS_CONOCIDOS/OtrosParametros/K2/060/SIM3/simulacion.gif)
