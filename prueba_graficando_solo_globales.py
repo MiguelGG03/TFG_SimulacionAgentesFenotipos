@@ -90,8 +90,8 @@ for t in range(pasos):
         jugador.considerar_cambio_de_fenotipo(K2)
 
     # Guardar frame visual por fenotipo
-    #graficar_y_guardar_fenotipos(reticula, paso=t, parametros=parametros, carpeta='img/frames')
-    #registrar_estado(reticula, paso=t)
+    graficar_y_guardar_fenotipos(reticula, paso=t, parametros=parametros, carpeta='img/frames')
+    registrar_estado(reticula, paso=t)
     registrar_estado_jugadores(reticula, paso=t)
 
 
