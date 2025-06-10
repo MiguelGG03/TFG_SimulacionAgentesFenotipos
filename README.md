@@ -92,27 +92,128 @@ Se distribuyen todos los fenotipos al 20%
 
 ##### 40% Mayoritarios
 
-![Mayoritario40_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/cooperacion_global.png)
+###### Aleatorio
 
-![Mayoritario40_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/fenotipos_evolucion.png)
+![Mayoritario40_Aleatorio_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Aleatorio/cooperacion_global.png)
 
-![Mayoritario40_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/frame_000.png)
+![Mayoritario40_Aleatorio_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Aleatorio/fenotipos_evolucion.png)
 
-![Mayoritario40_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/frame_099.png)
+![Mayoritario40_Aleatorio_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Aleatorio/frame_000.png)
 
-![Mayoritario40_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/simulacion.gif)
+![Mayoritario40_Aleatorio_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Aleatorio/frame_099.png)
+
+![Mayoritario40_Aleatorio_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Aleatorio/simulacion.gif)
+
+###### Altruista
+
+![Mayoritario40_Altruista_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Altruista/cooperacion_global.png)
+
+![Mayoritario40_Altruista_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Altruista/fenotipos_evolucion.png)
+
+![Mayoritario40_Altruista_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Altruista/frame_000.png)
+
+![Mayoritario40_Altruista_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Altruista/frame_099.png)
+
+![Mayoritario40_Altruista_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Altruista/simulacion.gif)
+
+###### Envidioso
+
+![Mayoritario40_Envidioso_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Envidioso/cooperacion_global.png)
+
+![Mayoritario40_Envidioso_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Envidioso/fenotipos_evolucion.png)
+
+![Mayoritario40_Envidioso_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Envidioso/frame_000.png)
+
+![Mayoritario40_Envidioso_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Envidioso/frame_099.png)
+
+![Mayoritario40_Envidioso_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Envidioso/simulacion.gif)
+
+###### Optimista
+
+![Mayoritario40_Optimista_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Optimista/cooperacion_global.png)
+
+![Mayoritario40_Optimista_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Optimista/fenotipos_evolucion.png)
+
+![Mayoritario40_Optimista_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Optimista/frame_000.png)
+
+![Mayoritario40_Optimista_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Optimista/frame_099.png)
+
+![Mayoritario40_Optimista_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Optimista/simulacion.gif)
+
+###### Pesimista
+
+![Mayoritario40_Pesimista_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Pesimista/cooperacion_global.png)
+
+![Mayoritario40_Pesimista_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Pesimista/fenotipos_evolucion.png)
+
+![Mayoritario40_Pesimista_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Pesimista/frame_000.png)
+
+![Mayoritario40_Pesimista_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Pesimista/frame_099.png)
+
+![Mayoritario40_Pesimista_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario40/Pesimista/simulacion.gif)
 
 ##### 60% Mayoritarios
 
-![Mayoritario60_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/cooperacion_global.png)
+###### Aleatorio
 
-![Mayoritario60_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/fenotipos_evolucion.png)
+![Mayoritario60_Aleatorio_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Aleatorio/cooperacion_global.png)
 
-![Mayoritario60_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/frame_000.png)
+![Mayoritario60_Aleatorio_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Aleatorio/fenotipos_evolucion.png)
 
-![Mayoritario60_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/frame_099.png)
+![Mayoritario60_Aleatorio_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Aleatorio/frame_000.png)
 
-![Mayoritario60_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/simulacion.gif)
+![Mayoritario60_Aleatorio_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Aleatorio/frame_099.png)
+
+![Mayoritario60_Aleatorio_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Aleatorio/simulacion.gif)
+
+###### Altruista
+
+![Mayoritario60_Altruista_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Altruista/cooperacion_global.png)
+
+![Mayoritario60_Altruista_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Altruista/fenotipos_evolucion.png)
+
+![Mayoritario60_Altruista_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Altruista/frame_000.png)
+
+![Mayoritario60_Altruista_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Altruista/frame_099.png)
+
+![Mayoritario60_Altruista_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Altruista/simulacion.gif)
+
+###### Envidioso
+
+![Mayoritario60_Envidioso_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Envidioso/cooperacion_global.png)
+
+![Mayoritario60_Envidioso_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Envidioso/fenotipos_evolucion.png)
+
+![Mayoritario60_Envidioso_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Envidioso/frame_000.png)
+
+![Mayoritario60_Envidioso_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Envidioso/frame_099.png)
+
+![Mayoritario60_Envidioso_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Envidioso/simulacion.gif)
+
+###### Optimista
+
+![Mayoritario60_Optimista_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Optimista/cooperacion_global.png)
+
+![Mayoritario60_Optimista_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Optimista/fenotipos_evolucion.png)
+
+![Mayoritario60_Optimista_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Optimista/frame_000.png)
+
+![Mayoritario60_Optimista_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Optimista/frame_099.png)
+
+![Mayoritario60_Optimista_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Optimista/simulacion.gif)
+
+###### Pesimista
+
+![Mayoritario60_Pesimista_glob](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Pesimista/cooperacion_global.png)
+
+![Mayoritario60_Pesimista_evo](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Pesimista/fenotipos_evolucion.png)
+
+![Mayoritario60_Pesimista_ini](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Pesimista/frame_000.png)
+
+![Mayoritario60_Pesimista_fin](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Pesimista/frame_099.png)
+
+![Mayoritario60_Pesimista_gif](PAGOS_CONOCIDOS/OtrosParametros/Distribuciones/Mayoritario60/Pesimista/simulacion.gif)
+
 
 #### Parámetros K1 y K2
 
