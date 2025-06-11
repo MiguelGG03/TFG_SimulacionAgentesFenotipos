@@ -28,7 +28,7 @@ class ReticulaNX:
         tipos = list(self.distrib_fenotipos.keys())
         pesos = list(self.distrib_fenotipos.values())
         return random.choices(tipos, weights=pesos, k=1)[0]
-
+    """
     def _asignar_jugadores(self):
         for nodo in self.G.nodes:
             id_str = f"{nodo[0]}-{nodo[1]}"
@@ -37,7 +37,41 @@ class ReticulaNX:
             tau = random.randint(*self.tau_limites)
             theta = 0
             jugador = Jugador(id_str, fenotipo, estrategia, tau, theta, self.tau_limites)
+            self.G.nodes[nodo]['jugador'] = jugador"""
+
+    def _asignar_jugadores(self):
+        total_nodos = self.L * self.L
+        tipos = list(self.distrib_fenotipos.keys())
+        pesos = list(self.distrib_fenotipos.values())
+
+        # Calcular número exacto por tipo
+        conteo_fenotipos = {
+            tipo: int(round(p * total_nodos)) for tipo, p in self.distrib_fenotipos.items()
+        }
+
+        # Ajuste si sobran o faltan por redondeo
+        suma = sum(conteo_fenotipos.values())
+        diferencia = total_nodos - suma
+        if diferencia != 0:
+            # Ajustar el primero proporcionalmente
+            conteo_fenotipos[tipos[0]] += diferencia
+
+        # Crear lista expandida y mezclar
+        lista_fenotipos = []
+        for tipo, cantidad in conteo_fenotipos.items():
+            lista_fenotipos.extend([tipo] * cantidad)
+        random.shuffle(lista_fenotipos)
+
+        # Asignar uno a uno
+        for i, nodo in enumerate(self.G.nodes):
+            id_str = f"{nodo[0]}-{nodo[1]}"
+            fenotipo = lista_fenotipos[i]
+            estrategia = None
+            tau = random.randint(*self.tau_limites)
+            theta = 0
+            jugador = Jugador(id_str, fenotipo, estrategia, tau, theta, self.tau_limites)
             self.G.nodes[nodo]['jugador'] = jugador
+
 
     def nodos(self):
         return self.G.nodes
@@ -106,6 +140,60 @@ def graficar_y_guardar_fenotipos(reticula, paso, parametros, carpeta="frames"):
     plt.close()
 
 
+def graficar_fenotipos(reticula, paso, parametros):
+    G = reticula.G
+    pos = dict((n, n) for n in G.nodes)
+
+    # Recolectar fenotipos
+    fenotipos_actuales = [G.nodes[n]['jugador'].fenotipo for n in G.nodes]
+    conteo = Counter(fenotipos_actuales)
+    total = sum(conteo.values())
+
+    # Colores por nodo
+    colores = [colores_fenotipos.get(G.nodes[n]['jugador'].fenotipo, 'gray') for n in G.nodes]
+
+    fig = plt.figure(figsize=(12.2, 9.7), dpi=100)
+    nx.draw(G, pos=pos, node_color=colores, with_labels=False, node_size=100)
+
+    # Título
+    plt.title(f"Fenotipos - PASO {paso}", fontsize=20, pad=20)
+
+    # Leyenda
+    leyenda = []
+    etiquetas = {
+        'E': 'Envidioso',
+        'P': 'Pesimista',
+        'O': 'Optimista',
+        'A': 'Altruista',
+        'R': 'Aleatorio'
+    }
+
+    for clave in colores_fenotipos:
+        porcentaje = (conteo[clave] / total) * 100 if clave in conteo else 0.0
+        etiqueta = f"{etiquetas[clave]}: {porcentaje:.1f}%"
+        leyenda.append(Patch(color=colores_fenotipos[clave], label=etiqueta))
+
+    plt.legend(handles=leyenda, title="Fenotipos", loc="lower left", bbox_to_anchor=(1.02, 0.3))
+
+    # Parámetros
+    lineas = []
+    for k, v in parametros.items():
+        if isinstance(v, list):
+            lineas.append(f"{k}:")
+            lineas.extend([f"  {item}" for item in v])
+        else:
+            lineas.append(f"{k} = {v}")
+    texto_parametros = "\n".join(lineas)
+    plt.gcf().text(1.02, 0.65, texto_parametros, fontsize=9, va='top')
+
+    return fig
+
+
+def guardar_grafico(fig, nombre_archivo):
+    os.makedirs(os.path.dirname(nombre_archivo), exist_ok=True)
+    fig.tight_layout()
+    fig.savefig(nombre_archivo, bbox_inches='tight')
+    plt.close(fig)
 
 
 

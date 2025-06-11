@@ -13,6 +13,7 @@ from utils.matriz_pagos import calcular_pagos_lineales
 crear_estructura()
 inicializar_logger()
 inicializar_logger_jugadores()
+
 # -------------------------------
 # PARÁMETROS DEL MODELO
 # -------------------------------
@@ -46,6 +47,9 @@ reticula = ReticulaNX(L, distrib_fenotipos, tau_limites)
 # -------------------------------
 # SIMULACIÓN
 # -------------------------------
+
+graficar_y_guardar_fenotipos(reticula, paso=0, parametros=parametros, carpeta='img/frames')
+
 for t in range(pasos):
     print(f"--- Paso {t+1} ---")
 
@@ -90,7 +94,10 @@ for t in range(pasos):
         jugador.considerar_cambio_de_fenotipo(K2)
 
     # Guardar frame visual por fenotipo
-    graficar_y_guardar_fenotipos(reticula, paso=t, parametros=parametros, carpeta='img/frames')
+    if t == 0:
+        pass
+    else:
+        graficar_y_guardar_fenotipos(reticula, paso=t, parametros=parametros, carpeta='img/frames')
     registrar_estado(reticula, paso=t)
     registrar_estado_jugadores(reticula, paso=t)
 

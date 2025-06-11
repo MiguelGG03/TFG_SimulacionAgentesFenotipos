@@ -12,15 +12,15 @@ distrib_fenotipos = {
 }
 """
 distrib_fenotipos = {
-    'E': 0.2,
-    'P': 0.2,
-    'O': 0.2,
-    'A': 0.2,
+    'E': 0.1,
+    'P': 0.1,
+    'O': 0.3,
+    'A': 0.3,
     'R': 0.2
 }
 
 
 tau_limites = (3, 10)
 delta_tau = 1
-K1 = 0.001
+K1 = 0.01
 K2 = 0.1
