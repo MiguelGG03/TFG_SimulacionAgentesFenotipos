@@ -23,4 +23,4 @@ distrib_fenotipos = {
 tau_limites = (3, 10)
 delta_tau = 1
 K1 = 0.1
-K2 = 0.1
+K2 = 0.0001
