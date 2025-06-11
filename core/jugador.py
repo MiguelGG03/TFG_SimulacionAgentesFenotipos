@@ -1,6 +1,7 @@
 import random
 from .fenotipos import decidir_estrategia
 from math import exp
+from scipy.special import expit
 
 class Jugador:
     def __init__(self, id, fenotipo, estrategia, tau, theta, tau_limites):
@@ -30,15 +31,45 @@ class Jugador:
         """Llama a la lógica del fenotipo para decidir si coopera o no."""
         self.estrategia = decidir_estrategia(self.fenotipo, T, S)
 
+
     def ajustar_tau(self, phi_local, phi_global, delta_tau, K1):
-        """Ajuste de persistencia basado en función tipo Fermi."""
-        prob_aumentar = 1 / (1 + exp(-(phi_local - phi_global) / K1))
+        """Ajuste de persistencia basado en función tipo Fermi (con expit)."""
+        diff = (phi_local - phi_global) / K1
+        prob_aumentar = expit(diff)  # más estable que 1 / (1 + exp(-x))
+
         if random.random() < prob_aumentar:
             self.tau = min(self.tau + delta_tau, self.tau_limites[1])
         else:
             self.tau = max(self.tau - delta_tau, self.tau_limites[0])
 
+    '''def ajustar_tau(self, phi_local, phi_global, delta_tau, K1):
+        """Ajuste de persistencia basado en función tipo Fermi."""
+        prob_aumentar = 1 / (1 + exp(-(phi_local - phi_global) / K1))
+        if random.random() < prob_aumentar:
+            self.tau = min(self.tau + delta_tau, self.tau_limites[1])
+        else:
+            self.tau = max(self.tau - delta_tau, self.tau_limites[0])'''
+
+
     def considerar_cambio_de_fenotipo(self, K2):
+        if self.theta < self.tau:
+            self.theta += 1
+            return  # No puede cambiar aún
+
+        vecino = random.choice(self.vecinos)
+        pi_i = self.pago_acumulado
+        pi_j = vecino.pago_acumulado
+
+        prob_imitar = expit((pi_j - pi_i) / K2)
+        if random.random() < prob_imitar:
+            self.fenotipo_anterior = self.fenotipo
+            self.fenotipo = vecino.fenotipo
+
+        self.theta = 0  # Reiniciar temporizador tras considerar cambio
+
+
+
+"""    def considerar_cambio_de_fenotipo(self, K2):
         if self.theta < self.tau:
             self.theta += 1
             return  # No puede cambiar aún
@@ -52,5 +83,5 @@ class Jugador:
             self.fenotipo_anterior = self.fenotipo
             self.fenotipo = vecino.fenotipo
 
-        self.theta = 0  # Reiniciar temporizador tras considerar cambio
+        self.theta = 0  # Reiniciar temporizador tras considerar cambio"""
 
