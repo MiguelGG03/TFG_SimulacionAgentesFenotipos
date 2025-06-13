@@ -8,6 +8,7 @@ from utils.logger import inicializar_logger, registrar_estado
 from utils.logger_jugadores import registrar_estado_jugadores
 from utils.metricas import f_estrategia  # necesario para φ
 
+
 crear_estructura()
 inicializar_logger()
 
